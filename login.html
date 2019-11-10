@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wake N Cake-Login</title>
+        <link rel="stylesheet" type="text/css" href="loginstyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+    </head>
+<body>
+<header>
+  <nav>
+      <div class="top_row clearfix">
+        <a href="index.html"><img src="logo1.png" class="logo">
+        </a>
+          <ul class="list_options animated slideInDown" id="show">
+             <li><a href="how_to_order.html">how to order</a></li>
+             <li><a href="track.html">track order</a></li>
+             <li><a href="#">log in</a></li>
+             <li><a href="signup.html">sign up</a></li>
+          </ul>
+          <a href="#" class="ipad" onclick="slide()"><i class="fa fa-bars"></i></a>
+      </div>
+  </nav>
+
+  <div class="login">
+      <h1 >LOGIN</h1>
+      <div class="textbox">
+            <i class="fa fa-user"></i>
+<input type="text" placeholder="Email/Mobile number" class="un">
+      </div>
+      <div class="textbox">
+            <i class="fa fa-lock"></i>
+            <input type="password" placeholder="password" class="pd">
+                  </div>
+
+                  
+                        <button class="btn">LOGIN</button>
+                        <br>
+                        <button class="gog"><i class="fa fa-google"></i>
+
+                            login with google</button>
+                 
+      
+
+  </div>
+
+</header>
+
+<script type="text/javascript">
+function slide()
+{
+    var x= document.getElementById('show');
+    if(x.style.display==="none")
+    {
+        x.style.display="block";
+    }
+    else
+    {
+        x.style.display="none";
+    }
+}
+</script>
+</body>
+
+</html>

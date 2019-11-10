@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wake N Cake-orders</title>
+        <link rel="stylesheet" type="text/css" href="howstyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        
+
+    </head>
+<body>
+<header>
+  <nav>
+      <div class="top_row clearfix">
+       <a href="index.html"><img src="logo1.png" class="logo">
+       </a>   
+          <ul class="list_options animated slideInDown" id="show">
+             <li><a href="#">how to order</a></li>
+             <li><a href="track.html">track order</a></li>
+             <li><a href="#">log in</a></li>
+             <li><a href="#">sign up</a></li>
+          </ul>
+          <a href="#" class="ipad" onclick="slide()"><i class="fa fa-bars"></i></a>
+      </div>
+  </nav>
+
+
+  
+
+  
+  <div id="pics">
+    <img name="slide" width="1000" height="500" >
+</div>
+      
+  
+
+</header>
+
+<script type="text/javascript">
+
+var i = 0; 			// Start Point
+var images = [];	// Images Array
+var time = 3000;	// Time Between Switch
+	 
+// Image List
+images[0] = '1.jpg';
+images[1] = '2.jpg';
+images[2] = '3.jpg';
+
+
+
+// Change Image
+function changeImg(){
+	document.slide.src = images[i];
+
+	// Check If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;
+</script>
+
+<script type="text/javascript">
+function slide()
+{
+    var x= document.getElementById('show');
+    if(x.style.display==="none")
+    {
+        x.style.display="block";
+    }
+    else
+    {
+        x.style.display="none";
+    }
+}
+</script>
+
+</body>
+
+</html>

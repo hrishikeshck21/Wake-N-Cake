@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wake N Cake-Signup</title>
+        <link rel="stylesheet" type="text/css" href="signupstyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+    </head>
+<body>
+<header>
+  <nav>
+      <div class="top_row clearfix">
+        <a href="index.html"><img src="logo1.png" class="logo">
+        </a>
+          <ul class="list_options animated slideInDown" id="show">
+             <li><a href="how_to_order.html">how to order</a></li>
+             <li><a href="track.html">track order</a></li>
+             <li><a href="login.html">log in</a></li>
+             <li><a href="#">sign up</a></li>
+          </ul>
+          <a href="#" class="ipad" onclick="slide()"><i class="fa fa-bars"></i></a>
+      </div>
+  </nav>
+
+  <div class="signup">
+      <h1 >SIGNUP</h1>
+
+      <h3>enter your credentials to make a new account</h3>
+      <div class="textbox">
+            
+<input type="text" placeholder="EmailID" class="un">
+      </div>
+      <div class="textbox">
+
+            <div class="textbox">
+            
+                    <input type="text" placeholder="MobileNumber" class="un1">
+                          </div>
+                          <div class="textbox">
+            
+            <input type="password" placeholder="password" class="pd">
+                  </div>
+
+                  <div class="textbox">
+            
+                        <input type="password" placeholder="Re-enter password" class="pd">
+                              </div>
+
+                  
+                        <button class="btn">SIGNUP</button>
+                        <br>
+                        <button class="gog"><i class="fa fa-google"></i>
+
+                            signup with google</button>
+                 
+      
+
+  </div>
+
+</header>
+
+<script type="text/javascript">
+function slide()
+{
+    var x= document.getElementById('show');
+    if(x.style.display==="none")
+    {
+        x.style.display="block";
+    }
+    else
+    {
+        x.style.display="none";
+    }
+}
+</script>
+</body>
+
+</html>
